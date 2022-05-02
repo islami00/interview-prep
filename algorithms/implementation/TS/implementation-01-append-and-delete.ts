@@ -47,7 +47,7 @@ function appendAndDelete(s: string, t: string, k: number): string {
     // Then trim from that point to end to get num of appends on t.
     // Check if s has a substr of t.
     // Find longest pattern.
-    let lastMatchingIndex = 0;
+    let lastMatchingIndex = -1;
     for( let i = 0; i < s.length; i++){
         if(s[i] == t[i]){
             lastMatchingIndex = i;
